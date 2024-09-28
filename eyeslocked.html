@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Loading</title>
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        #loading-bar-container {
+            width: 300px; /* Width of the loading bar container */
+            height: 10px; /* Height of the loading bar */
+            background-color: #ddd;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #loading-bar {
+            width: 0%;
+            height: 100%;
+            background-color: #1F51FF;
+            transition: width 0.1s;
+        }
+
+        #message {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 36px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Disable right-click */
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <script defer src="https://cdn.jsdelivr.net/npm/webgazer"></script>
+    <script defer src="./script.js" type=""></script>
+</head>
+<body>
+    <div id="loading-bar-container">
+        <div id="loading-bar"></div>
+    </div>
+
+    <div id="message">Hope you enjoyed your meditation session!</div>
+
+    <script>
+
+    </script>
+</body>
+</html>
+
